@@ -39,8 +39,7 @@ taskForm?.addEventListener("submit", (e) => {
     taskForm.reset();
     title.focus();
   } else {
-    console.log(title.value)
-    alert("Debe completar campos");
+    alert("All fields are required");
   }
   renderTasks(tasks);
 });
