@@ -38,10 +38,11 @@ taskForm?.addEventListener("submit", (e) => {
     showMessage(title.value);
     taskForm.reset();
     title.focus();
-    renderTasks(tasks);
   } else {
+    console.log(title.value)
     alert("Debe completar campos");
   }
+  renderTasks(tasks);
 });
 
 const renderTasks = (tasks: Task[]) => {
